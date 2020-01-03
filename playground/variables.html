@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Variables!</title>
   <link rel="stylesheet" href="../base.css">
 </head>
-
 <body>
   <script>
-    // function scoped
-    var first = 'wes';
-    // block scoped
-    let age = 300;
-    let cool = true;
+    // var is function scoped
+    var first = 'Jaymie'; // if you want to change a value, don't declare 'var' again
+    // let/const are block scoped {}
+    let age = 30;
+    let cool = true; // never want to change
 
-    const Dog = 'bowser';
+    const Dog = 'Jerry';
+    // uppercase variables work but are not preferred
+    // they are conventionally used for Classes
 
     // camel case
     const iLovePizza = true;
-    // UpperCamelCase
-    const ILoveToEatHotDogs = false;
-    // snake case!!
+    // upper camel case
+    const ILovePasta = true;
+    // snake case
     const this_is_snake_case = 'cool';
-
-
-
   </script>
 </body>
-
 </html>
