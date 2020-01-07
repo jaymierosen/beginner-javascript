@@ -1,15 +1,12 @@
 /* esline-disable */
 let age;
-console.log(age);
+console.log(age); // won't run because age does not been defined yet
 age = 10;
 
-/* What does this file do? */
+// when you run JS, it will take function declarations at the top of the page before it exists
+
 sayHi();
 
-/* How does this file do it? */
 function sayHi() {
-  console.log('hey!');
-  console.log(add(10, 2));
+  console.log('hi');
 }
-
-const add = (a, b) => a + b;
