@@ -1,15 +1,25 @@
-// *** CHAPTER 1: intro to the DOM ***
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attributes</title>
+</head>
+<body>
+    <script>
+        // *** CHAPTER 1 ***
 const p = document.querySelector('p');
 const divs = document.querySelectorAll('.item');
 const img = document.querySelectorAll('.item img');
 
-// *** CHAPTER 2: selecting elements ***
+// *** CHAPTER 2 ***
 const heading = document.querySelector('h2');
 console.log(p);
 console.log(divs);
 console.log(img);
 
-// *** CHAPTER 3: element properties and methods ***
+// *** CHAPTER 3 ***
 console.dir(heading);
 console.log(heading.textContent); // getter -- all of the contents
 console.log(heading.innerText); // getter -- text only
@@ -26,14 +36,14 @@ pizzaList.insertAdjacentText('afterbegin', '🍕'); // method
 // beforeend attaches at the end
 // afterbegin attaches at the beginning
 
-// *** CHAPTER 4: working with classes ***
+// *** CHAPTER 4 ***
 const pic = document.querySelector('.nice');
 pic.addEventListener('click', () => {
     pic.classList.toggle('round');
 });
 console.log(pic.classList);
 
-// *** CHAPTER 5: attributes ***
+// *** CHAPTER 5 ***
 pic.alt = 'Hello, this is an image'; // setter
 console.log(pic.alt) // getter
 window.addEventListener('load', () => {
@@ -45,5 +55,6 @@ console.log(pic.getAttribute('alt')); // getter
 
 const custom = document.querySelector('.custom');
 console.log(custom.dataset);
-
-// *** CHAPTER 6: creating HTML ***
+    </script>
+</body>
+</html>
