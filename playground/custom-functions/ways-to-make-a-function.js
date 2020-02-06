@@ -1,7 +1,7 @@
 // **** Function keyword ****
-// function doctorize(firstName) {
-//   return `Dr. ${firstName}`;
-// }
+function doctorize(firstName) {
+  return `Dr. ${firstName}`;
+}
 
 // **** Anon Function ****
 // function (firstName) {
