@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+const item = document.querySelector('.item');
+
+const width = 500;
+const src = `https://picsum.photos/${width}`;
+const desc = `Cute Pup <img onload="alert('HACKED')" src="https://picsum.photos/50"/>`; // xss -- someone hacking through inputs in forms
+const myHTML = `
+  <div class="wrapper">
+    <h2>Cute ${desc}</h2>
+    <img src="${src}" alt="${desc}"/>
+  </div>
+`;
+
+// turn a string into a DOM element
+const myFragment = document.createRange().createContextualFragment(myHTML);
+
+document.body.appendChild(myFragment);
+</script>
+</body>
+</html>

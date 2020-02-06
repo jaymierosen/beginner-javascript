@@ -3,8 +3,8 @@
 // const jaymie = 'jaymie';
 const city = 'Toronto';
 // ** var is attached to the window object **
-// console.log(window.name)
-// var name = 'jaymie';
+console.log(window.name)
+var name = 'jaymie';
 // functions are also attached to the window object
 // console.log(window.sayHi)
 
@@ -21,7 +21,7 @@ function go() {
 go();
 
 console.log(city);
-// console.log(hair);
+console.log(hair);
 
 // **** BLOCK SCOPED ****
 function isCool(name) {
